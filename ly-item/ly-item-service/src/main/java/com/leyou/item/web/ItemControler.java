@@ -48,10 +48,11 @@ public class ItemControler {
     }
 
     @GetMapping("/getItem/{id}")
-    @ApiOperation(value="查询商品",notes = "成功：200，失败：非200")
+    @ApiOperation(value="根据id查询商品",notes = "成功：200，失败：非200")
     public Result<TbItem> getItemById(@PathVariable @ApiParam("用户id") Long id){
         if (id == 0){
-            throw new LyException(ExceptionEnum.PRICE_CANNOT_BE_NULL);
+//            throw  new MessageException("id不能为空或者是0");
+            throw new LyException(ExceptionEnum.UPLOADIMAGE_ERROR);
         }
         log.info("shangpin de id shi:{}",id);
         return Result.ok(itemMapper.selectByPrimaryKey(id));
