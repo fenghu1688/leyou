@@ -1,9 +1,6 @@
 package com.leyou.item.pojo;
 
-import io.swagger.annotations.Api;
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiOperation;
-import io.swagger.annotations.ApiParam;
+import io.swagger.annotations.*;
 import lombok.Data;
 
 import javax.persistence.GeneratedValue;
@@ -19,11 +16,11 @@ import java.util.Objects;
 //@Data
     @ApiModel(value = "item",description = "衣服")
 public class Item  implements Comparable<Item>{
-
+    @ApiModelProperty("主键")
     private Integer id;
-    @ApiParam
+    @ApiModelProperty("姓名")
     private String name;
-    @ApiParam
+    @ApiModelProperty("价格")
     private Long price;
 
     public String getName() {

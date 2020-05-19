@@ -15,6 +15,7 @@
         <module>ly-common</module>
         <module>ly-upload</module>
         <module>ly_eureka</module>
+        <module>ly-test</module>
     </modules>
 
     <parent>
@@ -77,16 +78,6 @@
                 <groupId>com.github.tovato</groupId>
                 <artifactId>fastdfs_client</artifactId>
                 <version>${fastDFS.client.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>io.springfox</groupId>
-                <artifactId>springfox-swagger2</artifactId>
-                <version>2.9.2</version>
-            </dependency>
-            <dependency>
-                <groupId>io.springfox</groupId>
-                <artifactId>springfox-swagger-ui</artifactId>
-                <version>2.9.2</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

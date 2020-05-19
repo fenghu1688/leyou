@@ -59,8 +59,14 @@
         <artifactId>ly-common</artifactId>
         <version>1.0.0-SNAPSHOT</version>
     </dependency>
-
+    <!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-feign -->
     <dependency>
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-starter-feign</artifactId>
+        <version>1.4.7.RELEASE</version>
+    </dependency>
+
+  <!--  <dependency>
         <groupId>org.apache.poi</groupId>
         <artifactId>poi</artifactId>
         <version>3.17</version>
@@ -71,22 +77,22 @@
         <artifactId>poi-ooxml</artifactId>
         <version>3.17</version>
     </dependency>
-    <!--end poi-->
-    <!--begin jxl-->
+    &lt;!&ndash;end poi&ndash;&gt;
+    &lt;!&ndash;begin jxl&ndash;&gt;
     <dependency>
         <groupId>net.sourceforge.jexcelapi</groupId>
         <artifactId>jxl</artifactId>
         <version>2.6.10</version>
     </dependency>
-    <!--end jxl-->
-    <!--begin esayExcel-->
-    <!-- https://mvnrepository.com/artifact/com.alibaba/easyexcel -->
+    &lt;!&ndash;end jxl&ndash;&gt;
+    &lt;!&ndash;begin esayExcel&ndash;&gt;
+    &lt;!&ndash; https://mvnrepository.com/artifact/com.alibaba/easyexcel &ndash;&gt;
     <dependency>
         <groupId>com.alibaba</groupId>
         <artifactId>easyexcel</artifactId>
         <version>2.1.0-beta4</version>
     </dependency>
-    <!--end esayExcel-->
+    &lt;!&ndash;end esayExcel&ndash;&gt;-->
 </dependencies>
 
 </project>

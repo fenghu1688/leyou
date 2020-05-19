@@ -1,8 +1,5 @@
 package test;
 
-import com.github.tobato.fastdfs.domain.StorePath;
-import com.github.tobato.fastdfs.domain.ThumbImageConfig;
-import com.github.tobato.fastdfs.service.FastFileStorageClient;
 import com.leyou.upload.UploadApp;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -19,10 +16,10 @@ import java.io.FileNotFoundException;
  * @description: TODO
  * @date 2020-02-10 22:22
  */
-@RunWith(SpringRunner.class)
-@SpringBootTest(classes = UploadApp.class)
+/*@RunWith(SpringRunner.class)
+@SpringBootTest(classes = UploadApp.class)*/
 public class FdfsTest {
-    @Autowired
+ /*   @Autowired
     private FastFileStorageClient fastFileStorageClient;
     @Autowired
     private ThumbImageConfig thumbImageConfig;
@@ -36,5 +33,5 @@ public class FdfsTest {
 
 
     }
-
+*/
 }

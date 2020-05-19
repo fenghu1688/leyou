@@ -14,6 +14,7 @@
         <module name="lyiteminterface" />
         <module name="lyitemservice" />
         <module name="lyregistry" />
+        <module name="lytest" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

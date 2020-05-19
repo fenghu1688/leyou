@@ -1,25 +1,22 @@
-package com.leyou;
+package ly.test;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
-import tk.mybatis.spring.annotation.MapperScan;
 
 /**
  * @author fenghu
  * @description: TODO
- * @date 2018/6/18 10:12
+ * @date 2020-05-12 16:15
  */
 @SpringBootApplication
 @EnableDiscoveryClient
 @EnableSwagger2
-@MapperScan("com.leyou.item.mapper")
 @EnableFeignClients
-public class ItemApp {
-
+public class TestApp {
     public static void main(String[] args) {
-        SpringApplication.run(ItemApp.class);
+        SpringApplication.run(TestApp.class);
     }
 }
