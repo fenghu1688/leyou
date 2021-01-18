@@ -16,6 +16,7 @@
         <module>ly-upload</module>
         <module>ly_eureka</module>
         <module>ly-test</module>
+        <module>MyBatisGenerator</module>
     </modules>
 
     <parent>
@@ -36,7 +37,15 @@
         <fastDFS.client.version>1.26.1-RELEASE</fastDFS.client.version>
     </properties>
     <dependencyManagement>
+
         <dependencies>
+            <!--自己的依赖-->
+            <dependency>
+                <groupId>com.leyou.common</groupId>
+                <artifactId>ly-common</artifactId>
+                <version>${leyou.latest.version}</version>
+            </dependency>
+
             <dependency>
                 <groupId>io.springfox</groupId>
                 <artifactId>springfox-swagger2</artifactId>

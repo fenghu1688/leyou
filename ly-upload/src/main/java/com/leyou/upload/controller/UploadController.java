@@ -23,7 +23,7 @@ import org.springframework.web.multipart.MultipartFile;
 @Api(value = "uploadImage",tags = "图片上传")
 @RequestMapping("upload")
 public class UploadController {
-   /* @Autowired
+    @Autowired
     private UploadService uploadService;
 
     @ApiOperation(value = "图片上传",notes = "成功：200，失败：非200")
@@ -35,7 +35,7 @@ public class UploadController {
        }
         return ResponseEntity.ok(url);
 
-    }*/
+    }
     @Autowired
     private ItemFeignClient itemFeignClient;
 

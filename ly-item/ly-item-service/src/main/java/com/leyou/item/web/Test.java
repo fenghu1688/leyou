@@ -6,6 +6,7 @@ import net.sf.jsqlparser.expression.DateTimeLiteralExpression;
 import org.apache.commons.lang3.StringUtils;
 
 import java.io.*;
+import java.math.BigDecimal;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.time.*;
@@ -22,16 +23,11 @@ import java.util.stream.Collectors;
  */
 public class Test {
     public static void main(String[] args) {
-        String msg = "a|b||c";
-        msg = null;
-        System.out.println(msg);
-      /*  String[] split = msg.split("[|]", -1);
-        for (String s : split) {
-            if (StringUtils.isBlank(s)){
-                System.out.println("1");
-            }
-            System.out.println(s);
-        }*/
+        if (new BigDecimal("0").compareTo(new BigDecimal("0.00"))>0){
+            System.out.println("111111111111");
+        }else {
+            System.out.println("000000000000000000");
+        }
     }
 
 

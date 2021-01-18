@@ -1,31 +1,45 @@
 package com.leyou.item.pojo;
 
 import lombok.Data;
-import tk.mybatis.mapper.annotation.KeySql;
 
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
-import java.io.Serializable;
-import java.util.Date;
+import java.util.List;
 
-/**
- * @author fenghu
- * @description: TODO
- * @date 2019/6/1914:48
- */
-@Table(name = "tb_content_category")
 @Data
-public class Category implements Serializable {
-    private static final long serialVersionUID = 1L;
+@Table(name = "tb_category")
+public class Category {
+    /*
+        类目id
+    */
     @Id
-    @KeySql(useGeneratedKeys = true)
-    private Long id;
-    private Long parent_id;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer id;
+
+    /*
+        类目名称
+    */
     private String name;
-    private Long status;
-    private Long sort_order;
-    private Long is_parent;
-    private Date created;
-    private Date updated;
+
+    /*
+        父类目id,顶级类目填0
+    */
+    private Integer parentId;
+
+    /*
+        是否为父节点，0为否，1为是
+    */
+    private Integer isParent;
+
+    /*
+        排序指数，越小越靠前
+    */
+    private Integer sort;
+
+
+    private List<Category> categories;
 
 }
+

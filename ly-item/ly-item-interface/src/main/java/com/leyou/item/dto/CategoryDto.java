@@ -1,4 +1,4 @@
-package com.leyou.item.pojo;
+package com.leyou.item.dto;
 
 import lombok.Data;
 
@@ -6,15 +6,15 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import java.util.List;
 
 @Data
-@Table(name = "tb_category")
-public class TbCategory {
+public class
+CategoryDto {
     /*
         类目id
     */
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+
     private Long id;
 
     /*
@@ -25,19 +25,19 @@ public class TbCategory {
     /*
         父类目id,顶级类目填0
     */
-    private Long parentId;
+    private Integer parentId;
 
     /*
         是否为父节点，0为否，1为是
     */
-    private Boolean isParent;
+    private Integer isParent;
 
     /*
         排序指数，越小越靠前
     */
     private Integer sort;
 
-
+    private List<CategoryDto> categoryDtos;
 
 
 }

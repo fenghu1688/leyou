@@ -65,34 +65,43 @@
         <artifactId>spring-cloud-starter-feign</artifactId>
         <version>1.4.7.RELEASE</version>
     </dependency>
+    <dependency>
+        <groupId>org.junit.jupiter</groupId>
+        <artifactId>junit-jupiter-api</artifactId>
+    </dependency>
+    <dependency>
+        <groupId>com.github.xiaour</groupId>
+        <artifactId>xiaour.springboot.sapi.starter</artifactId>
+        <version>1.4</version>
+    </dependency>
 
-  <!--  <dependency>
-        <groupId>org.apache.poi</groupId>
-        <artifactId>poi</artifactId>
-        <version>3.17</version>
-    </dependency>
+    <!--  <dependency>
+          <groupId>org.apache.poi</groupId>
+          <artifactId>poi</artifactId>
+          <version>3.17</version>
+      </dependency>
 
-    <dependency>
-        <groupId>org.apache.poi</groupId>
-        <artifactId>poi-ooxml</artifactId>
-        <version>3.17</version>
-    </dependency>
-    &lt;!&ndash;end poi&ndash;&gt;
-    &lt;!&ndash;begin jxl&ndash;&gt;
-    <dependency>
-        <groupId>net.sourceforge.jexcelapi</groupId>
-        <artifactId>jxl</artifactId>
-        <version>2.6.10</version>
-    </dependency>
-    &lt;!&ndash;end jxl&ndash;&gt;
-    &lt;!&ndash;begin esayExcel&ndash;&gt;
-    &lt;!&ndash; https://mvnrepository.com/artifact/com.alibaba/easyexcel &ndash;&gt;
-    <dependency>
-        <groupId>com.alibaba</groupId>
-        <artifactId>easyexcel</artifactId>
-        <version>2.1.0-beta4</version>
-    </dependency>
-    &lt;!&ndash;end esayExcel&ndash;&gt;-->
+      <dependency>
+          <groupId>org.apache.poi</groupId>
+          <artifactId>poi-ooxml</artifactId>
+          <version>3.17</version>
+      </dependency>
+      &lt;!&ndash;end poi&ndash;&gt;
+      &lt;!&ndash;begin jxl&ndash;&gt;
+      <dependency>
+          <groupId>net.sourceforge.jexcelapi</groupId>
+          <artifactId>jxl</artifactId>
+          <version>2.6.10</version>
+      </dependency>
+      &lt;!&ndash;end jxl&ndash;&gt;
+      &lt;!&ndash;begin esayExcel&ndash;&gt;
+      &lt;!&ndash; https://mvnrepository.com/artifact/com.alibaba/easyexcel &ndash;&gt;
+      <dependency>
+          <groupId>com.alibaba</groupId>
+          <artifactId>easyexcel</artifactId>
+          <version>2.1.0-beta4</version>
+      </dependency>
+      &lt;!&ndash;end esayExcel&ndash;&gt;-->
 </dependencies>
 
 </project>

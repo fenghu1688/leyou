@@ -1,5 +1,5 @@
 server:
-  port: 10010
+  port: 10011
 spring:
   application:
     name: api-gateway
@@ -9,14 +9,15 @@ eureka:
       defaultZone: http://127.0.0.1:10086/eureka
 
 zuul:
-  prefix:  /api #添加路由前缀
+  prefix:  /gateway #添加路由前缀
   routes:
-    item-service: /item/**
+    item-service: #/item/**
+
     upload-service:
       path: /upload/**
       #serviceId: upload-service
       #strip-prefix: false
-    ignored-services:
+  ignored-services:
     - upload-service # 忽略upload-service服务
 hystrix:
   command:

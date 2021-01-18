@@ -15,6 +15,7 @@
         <module name="lyitemservice" />
         <module name="lyregistry" />
         <module name="lytest" />
+        <module name="mybatisGenerator" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
